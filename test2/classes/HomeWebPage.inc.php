@@ -166,7 +166,7 @@ EOD;
 		return $output;
 	}
 	 // implement 'buildHeader()' method
-	public function buildFooter {
+	public function buildFooter() {
 		$output.=<<<EOD
 
 	<div id="footer">
