@@ -6,7 +6,7 @@
 class HomeWebpage extends WebPage {
 	// define defaults for page links
 	private $mainLinks=array('Home'=>'index.php', 'About Us'=>'about.php', 'Products'=>'products.php', 'Contact Us' =>'contact.php');
-	public function __contruct($title='Home Page',$content='This is the default context for Home Page.') {
+	public function __construct($title='Home Page',$content='This is the default context for Home Page.') {
 		if (!$title || is_numeric($title) || strlen($title)>256) {
 			throw new Exception('Invalid title for the web page.');
 		}
