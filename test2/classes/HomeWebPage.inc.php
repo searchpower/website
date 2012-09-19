@@ -124,7 +124,7 @@ EOD;
 	}
 	// implement 'buildHeader()' method
 	public function buildHeader() {
-		$output .=<<<EOD
+		$output =<<<EOD
 <title>$this->title</title>
 </head>
 <body>
@@ -137,11 +137,11 @@ EOD;
 	}
 	// implement 'buildLinks()' method
 	public function buildLinks() {
-		$output='<div id="navbar">'."n".'<h2>This is the navigation bar of the web page</h2>'."n".'<ul>'."n";
+		$output='<div id="navbar">'."\n".'<h2>This is the navigation bar of the web page</h2>'."\n".'<ul>'."\n";
 		foreach ($this->mainLinks as $label=>$link) {
-			$output.='<li><a href="'.$link.'">'.$label.'</a></li>'."n";
+			$output.='<li><a href="'.$link.'">'.$label.'</a></li>'."\n";
 		}
-		$output.='</ul>'."n".'</div>';
+		$output.='</ul>'."\n".'</div>';
 		return $output;
 	}
 	// implement 'buildBody()' method
@@ -167,7 +167,7 @@ EOD;
 	}
 	 // implement 'buildHeader()' method
 	public function buildFooter() {
-		$output.=<<<EOD
+		$output=<<<EOD
 
 	<div id="footer">
 		<h2>This is the footer section of the web page</h2>

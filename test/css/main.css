@@ -1,0 +1,57 @@
+@charset "utf-8";
+/*****************************************************************************
+*****main css file for basic page layout**************************************
+*****************************************************************************/
+
+body {
+    font-size: 16px;
+    background-color: #ffffff;
+}
+p {
+    padding: 10px;
+    margin: 0;
+}
+div#wrapper {
+    width: 90% !important;
+    margin: 0 auto;
+}
+div#header {
+    background: url("../img/banner.png") repeat-y;
+    height: 150px;
+}
+div#navbar {
+    background-color: #33ccff;
+    height: 40px;
+    margin-bottom: 2px;
+}
+div#main {
+    background-color: #ff9999;
+    min-height: 100%;
+}
+div#left {
+    float: left !important;
+    background-color: #ff99cc;
+    min-height: 100%;
+    width: 20%;
+}
+div#content {
+    float: left !important;
+    background-color: #66ccff;
+    height: 100%;
+    width: 60%;
+}
+div#right {
+    float: left !important;
+    background-color: #ff9999;
+    min-height: 100%;
+    width: 20%;
+}
+div#footer {
+    clear: both;
+    float: left !important;
+    background-color: #33cc33;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    margin-top: 3px;
+}
